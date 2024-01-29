@@ -1,0 +1,67 @@
+html,
+body,
+#root {
+    background-color: hsl(0, 0%, 8%);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+}
+
+.container {
+    height: 530px;
+    width: 350px; /* Use a percentage for better responsiveness */
+    max-width: 375px; /* Limit the maximum width on larger screens */
+    margin: 100px auto; /* Center the container horizontally and adjust margin */
+    color: white;
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 3%;
+    box-shadow: inset;
+    text-align: center;
+}
+
+.jessica {
+    border-radius: 50%;
+    height: 100px;
+    margin-top: 30px;
+}
+
+.location {
+    color: hsl(75, 94%, 57%);
+    margin-top: 10px;
+}
+
+.card {
+    width: 90%; /* Use a percentage for better responsiveness */
+    max-width: 350px; /* Limit the maximum width on larger screens */
+    height: 35px;
+    margin: 10px auto; /* Center the card horizontally and adjust margin */
+    background-color: hsl(0, 0%, 20%);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;
+}
+
+.card:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: black;
+}
+
+/* Media query for 375px devices and smaller */
+@media only screen and (max-width: 375px) {
+    .container {
+        width: 90%;
+        max-width: none; /* Remove the maximum width restriction */
+        margin: 50px auto; /* Adjust margin for smaller screens */
+    }
+
+    .card {
+        width: 90%;
+        max-width: none;
+        margin: 10px auto;
+    }
+}
+
